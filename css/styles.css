@@ -1,0 +1,146 @@
+/* General styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Card styling */
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    font-weight: 500;
+}
+
+/* Form styling */
+.form-control:focus, .form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Tab styling */
+.nav-tabs .nav-link {
+    color: #495057;
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: 500;
+}
+
+/* Response display */
+#responseBodyPretty, #responseBodyRaw {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+pre {
+    margin: 0;
+}
+
+/* Content type containers */
+.body-container {
+    display: none;
+}
+
+.body-container.active {
+    display: block;
+}
+
+/* Auth input groups */
+.auth-input-group {
+    display: none;
+}
+
+/* Status colors */
+.status-success {
+    background-color: #198754;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.status-info {
+    background-color: #0dcaf0;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.status-redirect {
+    background-color: #fd7e14;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.status-client-error {
+    background-color: #dc3545;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.status-server-error {
+    background-color: #6c757d;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Button hover effects */
+.btn-outline-secondary:hover, .btn-outline-danger:hover {
+    transform: translateY(-1px);
+    transition: transform 0.2s;
+}
+
+/* Copy button tooltip */
+.tooltip {
+    position: absolute;
+    z-index: 1070;
+    display: block;
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    white-space: normal;
+    line-break: auto;
+    font-size: 0.875rem;
+    word-wrap: break-word;
+    opacity: 0;
+}
+
+/* Parameter rows animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.header-param-row, .query-param-row, .form-param-row {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Code highlighting enhancement */
+.hljs {
+    background: #f8f9fa;
+    border-radius: 4px;
+}
